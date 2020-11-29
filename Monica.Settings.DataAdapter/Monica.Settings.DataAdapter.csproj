@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="DataAdapter\Resources\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Models\Crm\Profile\" />
+    <Folder Include="Models\Crm\Core\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Monica.Core.Abstraction\Monica.Core.Abstraction.csproj" />
+    <ProjectReference Include="..\Monica.Core.ModelParametrs\Monica.Core.ModelParametrs.csproj" />
+  </ItemGroup>
+
+</Project>
